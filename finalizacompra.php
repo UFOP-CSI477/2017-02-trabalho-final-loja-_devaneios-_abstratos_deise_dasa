@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Sobre</title>
+  <title>Loja Virtual</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,7 @@
   </style>
 </head>
 <body>
+
   <div id="header">
     <div id="logo"><img src="imagens/devaneioslogo.png" width=467px; /></div>
      <ul id="navbar">
@@ -57,19 +58,24 @@
             <li><a href="lojavirtual.php">Loja Virtual</a></li>
        </ul>
      </div><!-- /.navbar-collapse -->
+<div class="starter">
+<center>
+    <h2>Compra efetuada com sucesso!!</h2>
+</center>
+</div>
+
+   <footer class="footer navbar-fixed-bottom">
+   <div class="container">
+     <center>
+     <h4>Social Media</h4>
+     <a target="_blank" href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
+     <a target="_blank" href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
+   </center>
+     <h4> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</h4>
+  </div>
+</footer>
 
 
-
-     <footer class="footer navbar-fixed-bottom">
-      <div class="container">
-        <center>
-        <h4>Social Media</h4>
-        <a target="_blank" href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
-        <a target="_blank" href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
-      </center>
-        <h4> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</h4>
-     </div>
-   </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="dist/js/bootstrap.min.js"></script>

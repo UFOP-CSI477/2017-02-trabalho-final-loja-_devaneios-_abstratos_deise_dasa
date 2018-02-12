@@ -314,11 +314,17 @@ fieldset.grupo1 .campo {
   transform: rotate(45deg);
 }
 
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
 #divCenter {
                 position:relative;
                 background-color: #00C5CD;
-                width: 450px;
-                height: 510px;
+                width: 250px;
+                height: 210px;
                 left: 30%;
                 padding:10px;
                 top: 50px;

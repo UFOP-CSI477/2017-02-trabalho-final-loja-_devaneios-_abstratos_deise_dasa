@@ -62,8 +62,6 @@
          </ul>
        </div><!-- /.navbar-collapse -->
 
-
-<div class="container">
  <div id="divCenter">
     <form action="#" method="post">
       <fieldset>
@@ -125,24 +123,13 @@
           </div>
           <fieldset class="grupo">
           <div class="campo">
-              <label for="rg">RG</label>
-              <input type="text" id="rg" name="rg" style="width: 10em" value="">
-          </div>
-          <div class="campo">
               <label for="cpf">CPF</label>
               <input type="text" id="cpf" name="cpf" style="width: 10em" value="">
           </div>
-        </fieldset>
 
-
-      <fieldset class="grupo">
         <div class="campo">
             <label for="telefone">Telefone</label>
             <input type="tel" id="telefone" name="telefone" style="width: 10em" value="">
-        </div>
-        <div class="campo">
-            <label for="celular">Celular</label>
-            <input type="tel" id="celular" name="celular" style="width: 10em" value="">
         </div>
       </fieldset>
         <div class="campo">
@@ -154,7 +141,9 @@
         <div class="campo">
          <label for="senha">Senha</label>
    		   <input type="password" name="senha"><br>
-       <label for="confirmacao">Confirmacao</label>
+       </div>
+           <div class="campo">
+       <label for="confirmacao">Confirmação de Senha</label>
       <input type="password" name="confirmacao"><br>
        </div>
      </fieldset>
@@ -176,17 +165,18 @@
 </div>
 
 <div class="starter">
-<footer class="bd-footer text-muted">
- <div class="container">
-   <center>
-   <h4>Social Media</h4>
-   <a href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
-   <a href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
- </center>
-   <p> Desenvolvido por Dasayeve Xavier & Deise Silva para a displicina WEBI</p>
+  <footer class="bd-footer text-muted">
+   <div class="container">
+     <center>
+     <h4>Social Media</h4>
+     <a target="_blank" href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
+     <a target="_blank" href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
+   </center>
+    <h4> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</h4>
+  </div>
+  </footer>
 </div>
-</footer>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>

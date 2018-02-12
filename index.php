@@ -103,7 +103,7 @@
          <a target="_blank" href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
          <a target="_blank" href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
        </center>
-         <p> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</p>
+         <h4> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</h4>
       </div>
     </footer>
 
