@@ -56,8 +56,13 @@
          </li>
             <li><a href="lojavirtual.php">Loja Virtual</a></li>
        </ul>
-     </div><!-- /.navbar-collapse -->
 
+     </div><!-- /.navbar-collapse -->
+     <div>
+       <h1>Devaneios Abstratos é um projeto artístico de tirinhas para a rede social Facebook </br>
+         Visite nossas redes sociais!</br>
+         Desenvolvido por Dasayeve Xavier. </h1>
+     </div>
 
 
      <footer class="footer navbar-fixed-bottom">

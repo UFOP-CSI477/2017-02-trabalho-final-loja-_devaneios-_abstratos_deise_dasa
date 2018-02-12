@@ -1,3 +1,12 @@
+<?php
+
+
+
+    $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
+
+    $users = $db->query("SELECT nome, senha from cliente");
+
+      ?>
 <!DOCTYPE html>
 <html>
  <head>
