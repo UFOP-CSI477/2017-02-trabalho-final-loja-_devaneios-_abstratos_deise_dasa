@@ -100,10 +100,10 @@
        <div class="container">
          <center>
          <h4>Social Media</h4>
-         <a href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
-         <a href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
+         <a target="_blank" href="https://www.facebook.com/devaneios.abstratos/?ref=br_rs"> <img src="icons/facebook.png" width=50px;/> </a>
+         <a target="_blank" href="https://www.instagram.com/dasaxavierart/"> <img src="icons/instagram.png" width=70px;/></a>
        </center>
-         <p> Desenvolvido por Dasayeve Xavier & Deise Silva para a displicina WEBI</p>
+         <p> Desenvolvido por Dasayeve Xavier & Deise Silva para a disciplina WEBI</p>
       </div>
     </footer>
 
