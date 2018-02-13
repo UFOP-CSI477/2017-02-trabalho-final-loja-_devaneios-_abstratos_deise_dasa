@@ -77,15 +77,50 @@
      <h2>Tirinhas</h2>
 
 
-  <center>
+     <center>
+        <h2>Golpes</h2>
+           <img src="imagens/10.jpg" height="400px" />
+     </center>
+
+   <center>
      <h2>Cabelos Divos</h2>
         <img src="imagens/1.jpg" />
-  </center>
+   </center>
 
-  <center>
+   <center>
      <h2>Pode ir embora Batman</h2>
-        <img src="imagens/2.png" />
-  </center>
+        <img src="imagens/2.png" height="650px"/>
+   </center>
+
+   <center>
+     <h2>Harry Potter</h2>
+        <img src="imagens/4.png" />
+   </center>
+
+   <center>
+     <h2>Comprinhas</h2>
+        <img src="imagens/6.png" height="400px"/>
+   </center>
+
+   <center>
+     <h2>Chuvinha</h2>
+        <img src="imagens/6.jpg" height="400px" />
+   </center>
+
+   <center>
+     <h2>Asiáticos</h2>
+        <img src="imagens/7.jpg" height="500px" />
+   </center>
+
+   <center>
+     <h2>Mendigo</h2>
+        <img src="imagens/8.jpg" height="600px" />
+   </center>
+
+   <center>
+     <h2>Questões filosóficas</h2>
+        <img src="imagens/9.jpg" height="400px" />
+   </center>
 
   <div class="footer">
    <div class="container">

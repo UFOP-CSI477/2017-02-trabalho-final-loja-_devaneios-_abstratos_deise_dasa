@@ -67,44 +67,62 @@
         </ul>
       </div><!-- /.navbar-collapse -->
 
-    <!-- Carousel
-      ================================================== -->
-      <div class="container">
-        <div  id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
+      <!-- Carousel
+        ================================================== -->
+        <div class="container">
+          <div  id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <div class="container">
-              <h2>Tirinhas</h2>
-            </div>
-            <img class="first-slide" src="imagens/4.png" alt="First slide">
-           </div>
+          <div class="carousel-inner" role="listbox">
 
-            <div class="item">
-            <div class="container">
-              <h2>Loja Virtual</h2>
-            </div>
-              <img class="second-slide" src="imagens/blusa.png" alt="Second slide">
-            </div>
+            <div class="item active">
+              <div class="container">
+                <h2>Tirinhas</h2>
+              </div>
+              <img class="first-slide" src="imagens/4.png" alt="First slide">
 
-       </div>
+             </div>
 
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- /.carousel -->
-      </div>
+             <div class="item">
+               <div class="container">
+                 <h2>Tirinhas</h2>
+               </div>
+               <img class="f-slide" src="imagens/3.png" alt="F slide">
+              </div>
 
+              <div class="item">
+              <div class="container">
+                <h2>Loja Virtual</h2>
+              </div>
+                <img class="second-slide" src="imagens/camisa/camisaf2.png" alt="Second slide">
+              </div>
+
+              <div class="item">
+              <div class="container">
+                <h2>Loja Virtual</h2>
+              </div>
+                <img class="se-slide" src="imagens/camisa/camisa4.png" alt="Se slide">
+              </div>
+
+
+         </div>
+
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div><!-- /.carousel -->
 
       <div class="footer">
        <div class="container">

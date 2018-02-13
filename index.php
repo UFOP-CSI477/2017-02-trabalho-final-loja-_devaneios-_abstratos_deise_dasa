@@ -81,22 +81,41 @@
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <div class="carousel-inner" role="listbox">
+
           <div class="item active">
             <div class="container">
               <h2>Tirinhas</h2>
             </div>
             <img class="first-slide" src="imagens/4.png" alt="First slide">
+
            </div>
+
+           <div class="item">
+             <div class="container">
+               <h2>Tirinhas</h2>
+             </div>
+             <img class="f-slide" src="imagens/3.png" alt="F slide">
+            </div>
 
             <div class="item">
             <div class="container">
               <h2>Loja Virtual</h2>
             </div>
-              <img class="second-slide" src="imagens/blusa.png" alt="Second slide">
+              <img class="second-slide" src="imagens/camisa/camisaf2.png" alt="Second slide">
             </div>
+
+            <div class="item">
+            <div class="container">
+              <h2>Loja Virtual</h2>
+            </div>
+              <img class="se-slide" src="imagens/camisa/camisa4.png" alt="Se slide">
+            </div>
+
 
        </div>
 
