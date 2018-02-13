@@ -321,14 +321,13 @@ footer {
 }
 
 #divCenter {
-   position:absolute;
+   position:relative;
    background-color: #00C5CD;
-   width: 550px;
-   height: 410px;
+   width: 460px;
+   height: 230px;
    left: 30%;
    padding:10px;
-   top: 100px;
-   bottom: 20px;
+   top: 15px;
 }
 
 input[type="checkbox"] {

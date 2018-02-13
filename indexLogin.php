@@ -51,9 +51,13 @@
                  <form class="form" role="form" method="post" action="logoff.php" accept-charset="UTF-8" id="login-nav">
                    <div class="bottom text-center">
                     <?php echo "Olá $usuario" . "</br>" ?>
-                     Gerenciar <a href="contausuario.php"><b>minha conta</b></a>
                    </div>
-
+                    <div class="bottom text-center">
+                   <a href="dadosusuario.php"><b>Meus Dados</b></a>
+                 </div>
+                    <div class="bottom text-center">
+                   <a href="comprasusuario.php"><b>Minhas Compras</b></a>
+                 </div>
                     <div class="form-group">
                          <button type="submit" class="btn btn-primary btn-block">Logoff</button>
                       </div>
@@ -63,7 +67,7 @@
           </li>
         </ul>
           </li>
-             <li><a href="lojavirtualLogin.php">Loja Virtual</a></li>
+             <li><a href="lojaVirtualLogin.php">Loja Virtual</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
 

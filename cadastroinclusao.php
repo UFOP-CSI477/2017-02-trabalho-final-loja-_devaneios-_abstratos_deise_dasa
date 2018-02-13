@@ -1,6 +1,3 @@
-<?php
-  $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
- ?>
 <!DOCTYPE html>  <!-- -->
 <html>
 
@@ -32,33 +29,7 @@
              <li><a href="index.php">Home</a></li>
              <li><a href="sobre.php">Sobre</a></li>
              <li><a href="tirinhas.php">Tirinhas</a></li>
-         <li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-       <ul id="login-dp" class="dropdown-menu">
-         <li>
-            <div class="row">
-               <div class="col-md-12">
-                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                     <div class="form-group">
-                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
-                     </div>
-                     <div class="form-group">
-                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
-                     </div>
-                     <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">Logar</button>
-                       </div>
-                    </form>
-                 </div>
-                 <div class="bottom text-center">
-                  Não tem cadastro? <a href="cadastro.php"><b>Cadastre-se</b></a>
-                 </div>
-              </div>
-           </li>
-         </ul>
-           </li>
+         
               <li><a href="lojavirtual.php">Loja Virtual</a></li>
          </ul>
        </div><!-- /.navbar-collapse -->
@@ -112,7 +83,58 @@
             </fieldset>
         </form>
       </div>
-    </form>
+       </form>
+
+       <?php
+          if(isset($_POST["nome"])) {
+            $nome = $_POST["nome"];
+          } else {
+            $nome = $_GET["nome"];
+         }
+         if(isset($_POST["cpf"])) {
+               $cpf = $_POST["cpf"];
+           } else {
+               $cpf = $_GET["cpf"];
+           }
+           if(isset($_POST["email"])) {
+                 $email = $_POST["email"];
+             } else {
+                 $email = $_GET["email"];
+             }
+             if(isset($_POST["senha"])) {
+                   $senha = $_POST["senha"];
+               } else {
+                   $senha = $_GET["senha"];
+               }
+               if(isset($_POST["estado"])) {
+                     $estado = $_POST["estado"];
+                 } else {
+                     $estado = $_GET["estado"];
+                 }
+
+           if(isset($_POST["rua"])) {
+               $rua = $_POST["rua"];
+           } else {
+               $rua = $_GET["rua"];
+           }
+
+             if(isset($_POST["numero"])) {
+                 $numero = $_POST["numero"];
+             } else {
+                 $numero = $_GET["numero"];
+             }
+
+
+            $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
+          $cadastro = $db->query("INSERT INTO cliente (idCliente, nome, cpf,email, senha, estado, rua, numero, sexo)
+                       VALUES ($cpf, '$nome', $cpf, '$email', $senha, '$estado','$rua', $numero, 'M')");
+
+           if($cadastro == null){
+              echo "<center>". "<h2>" . "Cadastro não realizado, por favor tente novamente!" . "</h2>" . "</center>";
+           }else{
+          echo "<center>". "<h2>" . "Cadastro realizado com sucesso" . "</h2>" . "</center>";
+           }
+       ?>
 
 
   <footer class="footer navbar-fixed-bottom">
@@ -135,4 +157,7 @@
 
 
   </body>
+
+
+
   </html>
