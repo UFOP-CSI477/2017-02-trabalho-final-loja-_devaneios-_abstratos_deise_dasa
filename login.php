@@ -35,9 +35,9 @@ header('location:indexLogin.php');
     unset ($_SESSION['nome']);
     unset ($_SESSION['logado']);
     //print_r($db);
-    print_r($result);
+    print_r($_SESSION);
     //print_r($result);
-    header('location:index.php');
+    //header('location:index.php');
 
     }
 

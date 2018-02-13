@@ -2,7 +2,10 @@
     session_start();
     if(isset($_SESSION["nome"])){
       $usuario=$_SESSION["nome"];
-    }else{echo "nao logou";}
+    }else{unset ($_SESSION['login']);
+    unset ($_SESSION['senha']);
+    unset ($_SESSION['nome']);
+    unset ($_SESSION['logado']);}
     $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
     $users = $db->query(" SELECT nome, email, senha from cliente");
     ?>
@@ -57,7 +60,7 @@
          </li>
        </ul>
          </li>
-            <li><a href="lojavirtual.php">Loja Virtual</a></li>
+            <li><a href="lojavirtualLogin.php">Loja Virtual</a></li>
        </ul>
 
      </div><!-- /.navbar-collapse -->
