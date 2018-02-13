@@ -1,5 +1,14 @@
+<?php
+    session_start();
+    if(isset($_SESSION["nome"])){
+      print_r($_SESSION);
+    }else{echo "nao logou";}
+    $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
+    $users = $db->query(" SELECT nome, email, senha from cliente");
+    ?>
 
 <!DOCTYPE html>
+
 <html>
  <head>
   <title>Devaneios Abstratos</title>
@@ -34,14 +43,14 @@
         <li>
            <div class="row">
               <div class="col-md-12">
-                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                 <form class="form" role="form" method="post" action="login.php" accept-charset="UTF-8" id="login-nav">
                     <div class="form-group">
                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                       <input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
+                       <input type="password" class="form-control" id="exampleInputPassword2" name="senha" placeholder="Senha" required>
                     </div>
                     <div class="form-group">
                          <button type="submit" class="btn btn-primary btn-block">Logar</button>
@@ -58,6 +67,7 @@
              <li><a href="lojavirtual.php">Loja Virtual</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
+
 
     <!-- Carousel
       ================================================== -->
