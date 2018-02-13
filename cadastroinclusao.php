@@ -29,7 +29,7 @@
              <li><a href="index.php">Home</a></li>
              <li><a href="sobre.php">Sobre</a></li>
              <li><a href="tirinhas.php">Tirinhas</a></li>
-         
+
               <li><a href="lojavirtual.php">Loja Virtual</a></li>
          </ul>
        </div><!-- /.navbar-collapse -->
@@ -126,8 +126,8 @@
 
 
             $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
-          $cadastro = $db->query("INSERT INTO cliente (idCliente, nome, cpf,email, senha, estado, rua, numero, sexo)
-                       VALUES ($cpf, '$nome', $cpf, '$email', $senha, '$estado','$rua', $numero, 'M')");
+          $cadastro = $db->query("INSERT INTO cliente (nome, cpf,email, senha, estado, rua, numero)
+                       VALUES ('$nome', $cpf, '$email', $senha, '$estado','$rua', $numero)");
 
            if($cadastro == null){
               echo "<center>". "<h2>" . "Cadastro não realizado, por favor tente novamente!" . "</h2>" . "</center>";

@@ -166,12 +166,12 @@ $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '1234
 
 
            $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
-          $alteracao =  $db->query("UPDATE cliente SET nome = '$nome' WHERE idCliente = $cpf ");
-          $alteracao =  $db->query("UPDATE cliente SET email = '$email' WHERE idCliente = $cpf ");
-          $alteracao =  $db->query("UPDATE cliente SET senha = $senha WHERE idCliente = $cpf ");
-          $alteracao =  $db->query("UPDATE cliente SET estado = '$estado' WHERE idCliente = $cpf ");
-          $alteracao =  $db->query("UPDATE cliente SET rua = '$rua' WHERE idCliente = $cpf ");
-          $alteracao =  $db->query("UPDATE cliente SET numero = $numero WHERE idCliente = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET nome = '$nome' WHERE cpf = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET email = '$email' WHERE cpf = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET senha = $senha WHERE cpf = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET estado = '$estado' WHERE cpf = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET rua = '$rua' WHERE cpf = $cpf ");
+          $alteracao =  $db->query("UPDATE cliente SET numero = $numero WHERE cpf = $cpf ");
 
 
            if($alteracao == null){
