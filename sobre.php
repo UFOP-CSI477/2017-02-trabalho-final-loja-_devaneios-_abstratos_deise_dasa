@@ -74,10 +74,10 @@
        </ul>
 
      </div><!-- /.navbar-collapse -->
-     <div>
-       <h1>Devaneios Abstratos é um projeto artístico de tirinhas para a rede social Facebook </br>
+     <div class="starter">
+       <h3>Devaneios Abstratos é um projeto artístico de tirinhas para a rede social Facebook </br>
          Visite nossas redes sociais!</br>
-         Desenvolvido por Dasayeve Xavier. </h1>
+         Desenvolvido por Dasayeve Xavier. </h3>
      </div>
 
 

@@ -84,32 +84,16 @@
                   <label for="snome">Complemento</label>
                   <input type="text" id="snome" name="snome" style="width: 10em" value="">
               </div>
-             </fieldset>
-             <fieldset class="grupo">
-               <div class="campo">
-                 <div id="estado">
-                   <label for="estado">Estado</label>
-            		    <select name="estado"> <!-- Só marca uma unica opção, igual o radio -->
-            			  <option value="0" selected="true">Selecione: </option>            <!-- AJAX= se tivesse um campo cidade, ele so apareceria se uma cidade fosse escolhida.-->
-            			  <option value="1">Minas Gerais </option>
-            			  <option value="2">Rio de Janeiro</option>
-            			  <option value="3">São Paulo </option>
-            			</select>
-            		</div>
-             </div>
-
+            </fieldset>
+            <fieldset class="grupo">
             <div class="campo">
-              <div id="cidades">
-                <label for="cidades">Cidade</label>
-         		    <select name="cidade"> <!-- Só marca uma unica opção, igual o radio -->
-         			  <option value="0" selected="true">Selecione: </option>            <!-- AJAX= se tivesse um campo cidade, ele so apareceria se uma cidade fosse escolhida.-->
-         			  <option value="1">João Monlevade </option>
-         			  <option value="2">Itabira </option>
-         			  <option value="3">Belo Horizonte </option>
-         			  <option value="4">Itaúna </option>  <!-- O selected serve pra qando usarmos o limpar,dai ele volta como padrao-->
-         			  <option value="5">Alvinópolis </option>
-         			</select>
-         		</div>
+                <label for="cpf">Cidade</label>
+                <input type="text" id="cidade" name="cpf" style="width: 10em" value="">
+            </div>
+
+          <div class="campo">
+              <label for="telefone">Estado</label>
+              <input type="tel" id="estado" name="telefone" style="width: 10em" value="">
           </div>
         </fieldset>
           <div class="campo">

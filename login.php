@@ -40,9 +40,6 @@ if($_SESSION["nome"] == "Deise Silva"){
     unset ($_SESSION['nome']);
     unset ($_SESSION['logado']);
     header('location:index.php');
-    //print_r($db);
-    //print_r($result);
-    //header('location:index.php');
 
     }
 

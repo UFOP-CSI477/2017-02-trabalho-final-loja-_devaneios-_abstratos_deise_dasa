@@ -51,7 +51,7 @@
                  <form class="form" role="form" method="post" action="logoff.php" accept-charset="UTF-8" id="login-nav">
                    <div class="bottom text-center">
                     <?php echo "Olá $usuario" . "</br>" ?>
-                    Gerenciar <a href="#"><b>minha conta</b></a>
+                     Gerenciar <a href="contausuario.php"><b>minha conta</b></a>
                    </div>
 
                     <div class="form-group">
