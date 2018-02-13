@@ -28,14 +28,19 @@ if( !$linha["idCliente"]==null) {
   $_SESSION["nome"] = $linha["nome"];
   $_SESSION["logado"]=1;
 
-header('location:indexLogin.php');
+if($_SESSION["nome"] == "Deise Silva"){
+  header('location:indexadmin.php');
+}else{
+  header('location:indexLogin.php');
+}
+
 } else {
     unset ($_SESSION['login']);
     unset ($_SESSION['senha']);
     unset ($_SESSION['nome']);
     unset ($_SESSION['logado']);
+    header('location:index.php');
     //print_r($db);
-    print_r($_SESSION);
     //print_r($result);
     //header('location:index.php');
 
