@@ -17,16 +17,17 @@ $db = new PDO('mysql:host=localhost;dbname=devaneiosLoja','devaneiosloja', '1234
 
 $result = $db->query("SELECT * FROM `cliente` WHERE `email` = '$login' AND `SENHA` = '$senha'");
 
-//checa result se maior que 0 quer dizer que deu certo
-$row_cnt = count($result);
+//$row_cnt = count($result);
+//$row_cnt = count($linha);
+//echo $row_cnt;
+//checa se algum parametro é null
 $linha = $result->fetch(PDO::FETCH_ASSOC);
-if($row_cnt > 0 ) {
+if( !$linha["idCliente"]==null) {
   $_SESSION["login"] = $login;
   $_SESSION["senha"] = $senha;
   $_SESSION["nome"] = $linha["nome"];
   $_SESSION["logado"]=1;
-//  echo $_SESSION['nome'];
-//  echo "sucesso";
+
 header('location:indexLogin.php');
 } else {
     unset ($_SESSION['login']);
