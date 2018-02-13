@@ -35,15 +35,9 @@
      <div id="logo"><img src="imagens/devaneioslogo.png" width=467px; /></div>
 
       <ul id="navbar">
-<<<<<<< HEAD
             <li><a href="indexLogin.php">Home</a></li>
             <li><a href="sobreLogin.php">Sobre</a></li>
             <li><a href="tirinhasLogin.php">Tirinhas</a></li>
-=======
-            <li><a href="index.php">Home</a></li>
-            <li><a href="sobre.php">Sobre</a></li>
-            <li><a href="tirinhas.php">Tirinhas</a></li>
->>>>>>> ba49bb16166cb07a848d2583df3150718e445bbe
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>OLá</b> <span class="caret"></span></a>
       <ul id="login-dp" class="dropdown-menu">
@@ -65,11 +59,7 @@
           </li>
         </ul>
           </li>
-<<<<<<< HEAD
              <li><a href="lojavirtualLogin.php">Loja Virtual</a></li>
-=======
-             <li><a href="lojavirtual.php">Loja Virtual</a></li>
->>>>>>> ba49bb16166cb07a848d2583df3150718e445bbe
         </ul>
       </div><!-- /.navbar-collapse -->
 
