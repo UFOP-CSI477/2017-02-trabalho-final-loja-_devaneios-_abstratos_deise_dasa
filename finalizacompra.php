@@ -9,15 +9,12 @@ unset ($_SESSION['senha']);
 unset ($_SESSION['nome']);
 unset ($_SESSION['logado']);
 unset ($_SESSION['id']);}
-print_r($_POST) ;
+
 $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
 if(isset($_POST["c1"])){
   $id1=1;
-  echo "aqui";
   $users =  $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id1)");
   $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 1;");
-}else {
-  echo "nao deu";
 }
 if(isset($_POST["c2"])){
   $id2=2;

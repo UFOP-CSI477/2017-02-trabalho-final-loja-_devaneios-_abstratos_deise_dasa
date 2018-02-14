@@ -83,7 +83,7 @@
          echo "<td>" . $linha["nomeProduto"] . "</td>";
          echo "<td>" . $linha["tipo"] . "</td>";
          echo "<td>" . $linha["preco"] . "</td>";
-        echo "<td>" . $linha["quantidade"] . "</td>";
+         echo "<td>" . $linha["quantidade"] . "</td>";
          echo "</tr>";
      }
   ?>

@@ -50,9 +50,11 @@
 
   <table class="table">
      <tr>
-         <th>Produto ID</th>
-         <th>Preco</th>
-         <th>Quantidade</th>
+       <th>Produto ID</th>
+       <th>Nome</th>
+       <th>Tipo</th>
+       <th>Preco</th>
+       <th>Quantidade</th>
      </tr>
  <?php
      while( $linha = $admin->fetch(PDO::FETCH_ASSOC) ) {
