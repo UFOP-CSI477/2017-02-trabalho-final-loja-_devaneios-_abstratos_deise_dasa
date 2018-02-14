@@ -74,11 +74,12 @@ unset ($_SESSION['id']);}
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
+<form method="post"action="finalizacompra.php">
     <!-- Wrap the rest of the page in another container to center all the content. -->
-<<div class="starter">
+<div class="starter">
  <div class="container marketing">
       <!-- Three columns of text below the carousel -->
-      <form method="post"action="finalizacompra.php">
+
       <div class="row">
 
         <div class="col-lg-4">
@@ -178,7 +179,7 @@ unset ($_SESSION['id']);}
       </div>
     </div>
     <center>
-    <h1><a class="btn btn-lg btn-danger"  button type="submit" href="finalizacompra.php">Finalizar compra</a></h1>
+  <button type="submit" name="incluir" class="btn btn-primary">Finalizar Compra</button>
   </center>
 </form>
   </div>
