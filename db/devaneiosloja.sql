@@ -20,10 +20,11 @@
 --
 CREATE DATABASE IF NOT EXISTS `DevaneiosLoja` DEFAULT CHARACTER SET utf8 ;
 USE `DevaneiosLoja` ;
+--ATENCAO, SE O USUARIO JA ESTVER CRIADO NECESSARIO DESCOMENTAR AQUI
 -- DROP USER `devaneiosloja`@`localhost`;
--- CREATE USER `devaneiosloja`@`localhost` identified by "123456";
--- GRANT ALL PRIVILEGES ON DevaneiosLoja.* TO `devaneiosloja`@`localhost`;
--- FLUSH PRIVILEGES;
+ CREATE USER `devaneiosloja`@`localhost` identified by "123456";
+ GRANT ALL PRIVILEGES ON DevaneiosLoja.* TO `devaneiosloja`@`localhost`;
+ FLUSH PRIVILEGES;
 
 DROP TABLE IF EXISTS `cliente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
