@@ -178,7 +178,7 @@ unset ($_SESSION['id']);}
       </div>
     </div>
     <center>
-    <h1><a class="btn btn-lg btn-danger" href="finalizacompra.php" role="button">Finalizar Compra</a></h1>
+    <h1><a class="btn btn-lg btn-danger" href="#" role="button">Faça Login para comprar</a></h1>
   </center>
   </div>
 

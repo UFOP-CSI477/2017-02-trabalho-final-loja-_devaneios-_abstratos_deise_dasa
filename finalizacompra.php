@@ -1,3 +1,52 @@
+<?php
+session_start();
+if(isset($_SESSION["nome"])){
+$usuario=$_SESSION["nome"];
+$idUser=$_SESSION['id'];
+}else{
+unset ($_SESSION['login']);
+unset ($_SESSION['senha']);
+unset ($_SESSION['nome']);
+unset ($_SESSION['logado']);
+unset ($_SESSION['id']);}
+print_r($_POST) ;
+$db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
+if(isset($_POST["c1"])){
+  $id1=1;
+  echo "aqui";
+  $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id1)");
+}else {
+  echo "nao deu";
+}
+if(isset($_POST["c2"])){
+  $id2=2;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id2)");
+}
+if(isset($_POST["c3"])){
+  $id3=3;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id3)");
+}
+if(isset($_POST["c4"])){
+  $id4=4;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id4)");
+}
+if(isset($_POST["c5"])){
+  $id5=5;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id5)");
+}
+if(isset($_POST["c6"])){
+  $id6=6;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id6)");
+}
+if(isset($_POST["c7"])){
+
+  $id7=7;
+  $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id7)");
+}
+
+
+
+    ?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -24,39 +73,37 @@
 
   <div id="header">
     <div id="logo"><img src="imagens/devaneioslogo.png" width=467px; /></div>
-     <ul id="navbar">
-           <li><a href="index.php">Home</a></li>
-           <li><a href="sobre.php">Sobre</a></li>
-           <li><a href="tirinhas.php">Tirinhas</a></li>
-       <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-     <ul id="login-dp" class="dropdown-menu">
-       <li>
-          <div class="row">
-             <div class="col-md-12">
-                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                   <div class="form-group">
-                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
-                   </div>
-                   <div class="form-group">
-                      <label class="sr-only" for="exampleInputPassword2">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
-                   </div>
-                   <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Logar</button>
-                     </div>
-                  </form>
+    <ul id="navbar">
+          <li><a href="indexLogin.php">Home</a></li>
+          <li><a href="sobreLogin.php">Sobre</a></li>
+          <li><a href="tirinhasLogin.php">Tirinhas</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>OLá</b> <span class="caret"></span></a>
+    <ul id="login-dp" class="dropdown-menu">
+      <li>
+         <div class="row">
+            <div class="col-md-12">
+               <form class="form" role="form" method="post" action="logoff.php" accept-charset="UTF-8" id="login-nav">
+                 <div class="bottom text-center">
+                  <?php echo "Olá $usuario" . "</br>" ?>
+                 </div>
+                  <div class="bottom text-center">
+                 <a href="dadosusuario.php"><b>Meus Dados</b></a>
                </div>
-               <div class="bottom text-center">
-                Não tem cadastro? <a href="cadastro.php"><b>Cadastre-se</b></a>
+                  <div class="bottom text-center">
+                 <a href="comprasusuario.php"><b>Minhas Compras</b></a>
                </div>
-            </div>
-         </li>
-       </ul>
-         </li>
-            <li><a href="lojavirtual.php">Loja Virtual</a></li>
-       </ul>
+                  <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Logoff</button>
+                    </div>
+                 </form>
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+           <li><a href="lojaVirtualLogin.php">Loja Virtual</a></li>
+      </ul>
      </div><!-- /.navbar-collapse -->
 <div class="starter">
 <center>
