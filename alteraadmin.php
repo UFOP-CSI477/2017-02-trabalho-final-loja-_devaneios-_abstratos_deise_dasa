@@ -32,7 +32,7 @@
       </div><!-- /.navbar-collapse -->
 
 <div class="starter">
-      <h2>Alteraçõe</h2>
+      <h2>Alteração de Preço e Estoque </h2>
 </div><!-- /.container -->
 
 

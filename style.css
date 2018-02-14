@@ -68,7 +68,9 @@ display: none;
 h2{
  color: yellow;
  font-family: komika;
-}
+ -webkit-text-fill-color: yellow;
+  -webkit-text-stroke: 2px black;
+      }
 
 .starter {
   padding: 40px 15px;

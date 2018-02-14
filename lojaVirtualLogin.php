@@ -98,7 +98,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c1\" name=\"c1\" /><label for=\"c1\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
           ?>
 
@@ -119,7 +119,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c2\" name=\"c2\" /><label for=\"c2\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
           ?>
         </div><!-- /.col-lg-4 -->
@@ -140,7 +140,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c3\" name=\"c3\" /><label for=\"c3\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
 
           ?>
@@ -166,7 +166,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c4\" name=\"c4\" /><label for=\"c4\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
           ?>
 
@@ -186,7 +186,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c5\" name=\"c5\" /><label for=\"c5\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
           ?>
 
@@ -207,7 +207,7 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c6\" name=\"c6\" /><label for=\"c6\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
 
           ?>
@@ -233,10 +233,10 @@ unset ($_SESSION['id']);}
           if($quantidade>0){
             echo "<input type=\"checkbox\" id=\"c7\" name=\"c7\" /><label for=\"c7\"><span></span>Comprar</label>";
           }else{
-             echo "Produto fora de estoque";
+             echo "Produto indisponível no estoque";
           }
           ?>
-          
+
         </div><!-- /.col-lg-4 -->
       </div>
     </div>

@@ -37,7 +37,7 @@
       </div><!-- /.navbar-collapse -->
 
 <div class="starter">
-      <h2>Alterações</h2>
+      <h2>Alteração de Preço e Estoque</h2>
 </div><!-- /.container -->
 
 

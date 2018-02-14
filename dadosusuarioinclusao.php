@@ -175,9 +175,9 @@ $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '1234
 
 
            if($alteracao == null){
-             echo "<center>". "<h2>" . "Cadastro não realizado, por favor tente novamente!" . "</h2>" . "</center>";
+             echo "<center>". "<h2>" . "Atualização de cadastro não realizada, por favor tente novamente!" . "</h2>" . "</center>";
          } else{
-        echo "<center>". "<h2>" . "Cadastro realizado com sucesso" . "</h2>" . "</center>";
+        echo "<center>". "<h2>" . "Atualiação de cadastro realizada com sucesso" . "</h2>" . "</center>";
       }
 
      ?>
