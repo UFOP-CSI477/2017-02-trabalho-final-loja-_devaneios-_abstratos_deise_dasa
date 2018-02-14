@@ -14,34 +14,41 @@ $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '1234
 if(isset($_POST["c1"])){
   $id1=1;
   echo "aqui";
-  $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id1)");
+  $users =  $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id1)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 1;");
 }else {
   echo "nao deu";
 }
 if(isset($_POST["c2"])){
   $id2=2;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id2)");
+   $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 2;");
 }
 if(isset($_POST["c3"])){
   $id3=3;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id3)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 3;");
 }
 if(isset($_POST["c4"])){
   $id4=4;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id4)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 4;");
 }
 if(isset($_POST["c5"])){
   $id5=5;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id5)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 5;");
 }
 if(isset($_POST["c6"])){
   $id6=6;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id6)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 6;");
 }
 if(isset($_POST["c7"])){
 
   $id7=7;
   $users = $db->query("INSERT INTO `vendas`(idClienteVendas,idProdutoVendas) VALUES ($idUser,$id7)");
+  $db->query("UPDATE produto SET quantidade = quantidade-1 WHERE idProduto = 7;");
 }
 
 
