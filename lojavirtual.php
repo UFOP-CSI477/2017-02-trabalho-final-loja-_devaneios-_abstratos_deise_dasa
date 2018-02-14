@@ -77,111 +77,177 @@ unset ($_SESSION['id']);}
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-<div class="starter">
- <div class="container marketing">
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisa.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=1");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-            <input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisa2.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=2");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-        <input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisa3.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=3");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-        <input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-      </div>
-    </div>
-
+    <form method="post"action="#">
+        <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="starter">
      <div class="container marketing">
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisa4.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=4");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-        <input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisaf2.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=5");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-            <input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisaf3.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=6");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-          <input type="checkbox" id="c6" name="cc" /><label for="c6"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-   </div>
- </div>
- <div class="starter">
-  <div class="container marketing">
-        <div class="col-lg-4">
-          <img class="img-circle" src="imagens/camisa/camisaf1.png" alt="Generic placeholder image" width="140" height="140">
-          <?php
-          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=7");
-          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
-          $nomeCamisa=$linha["nomeProduto"];
-          $preco=$linha["preco"];
-          echo "<h4>$nomeCamisa</h4>";
-          echo "<h2>R$" . "$preco" . "</h2>";
-          ?>
-          <input type="checkbox" id="c7" name="cc" /><label for="c7"><span></span>Comprar</label>
-        </div><!-- /.col-lg-4 -->
-      </div>
-    </div>
-    <center>
-    <h1><a class="btn btn-lg btn-danger" href="#" role="button">Faça Login para comprar</a></h1>
-  </center>
-  </div>
+          <!-- Three columns of text below the carousel -->
 
+          <div class="row">
+
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisa.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=1");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=1");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c1\" name=\"c1\" /><label for=\"c1\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisa2.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=2");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=2");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c2\" name=\"c2\" /><label for=\"c2\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+              ?>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisa3.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=3");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=3");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c3\" name=\"c3\" /><label for=\"c3\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+          </div>
+        </div>
+
+        <div class="starter">
+         <div class="container marketing">
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisa4.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=4");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=4");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c4\" name=\"c4\" /><label for=\"c4\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisaf2.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=5");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=5");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c5\" name=\"c5\" /><label for=\"c5\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisaf3.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=6");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=6");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c6\" name=\"c6\" /><label for=\"c6\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+       </div>
+     </div>
+     <div class="starter">
+      <div class="container marketing">
+            <div class="col-lg-4">
+              <img class="img-circle" src="imagens/camisa/camisaf1.png" alt="Generic placeholder image" width="140" height="140">
+              <?php
+              $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=7");
+              $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+              $nomeCamisa=$linha["nomeProduto"];
+              $preco=$linha["preco"];
+              echo "<h4>$nomeCamisa</h4>";
+              echo "<h2>R$" . "$preco" . "</h2>";
+
+              $estoque = $db->query(" SELECT quantidade from produto where idProduto=7");
+              $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
+              $quantidade=$linha["quantidade"];
+              if($quantidade>0){
+                echo "<input type=\"checkbox\" id=\"c7\" name=\"c7\" /><label for=\"c7\"><span></span>Comprar</label>";
+              }else{
+                 echo "Produto fora de estoque";
+              }
+              ?>
+
+            </div><!-- /.col-lg-4 -->
+          </div>
+        </div>
+        <center>
+       <h1><a class="btn btn-lg btn-danger" href="#" role="button">Faça Login para comprar</a></h1>
+      </center>
+    </form>
+      </div>
 <div class="starter">
   <div class="footer">
    <div class="container">

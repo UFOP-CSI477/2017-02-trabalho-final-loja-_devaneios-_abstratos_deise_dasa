@@ -95,13 +95,13 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=1");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c1\" name=\"c1\" /><label for=\"c1\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
           ?>
-            <input type="checkbox" id="c1" name="c1" /><label for="c1"><span></span>Comprar</label>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisa2.png" alt="Generic placeholder image" width="140" height="140">
@@ -116,13 +116,12 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=2");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c2\" name=\"c2\" /><label for=\"c2\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
           ?>
-        <input type="checkbox" id="c2" name="c2" /><label for="c2"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
@@ -138,14 +137,14 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=3");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c3\" name=\"c3\" /><label for=\"c3\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
 
           ?>
-        <input type="checkbox" id="c3" name="c3" /><label for="c3"><span></span>Comprar</label>
+
         </div><!-- /.col-lg-4 -->
       </div>
     </div>
@@ -164,13 +163,13 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=4");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c4\" name=\"c4\" /><label for=\"c4\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
           ?>
-        <input type="checkbox" id="c4" name="c4" /><label for="c4"><span></span>Comprar</label>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisaf2.png" alt="Generic placeholder image" width="140" height="140">
@@ -184,13 +183,13 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=5");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c5\" name=\"c5\" /><label for=\"c5\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
           ?>
-            <input type="checkbox" id="c5" name="c5" /><label for="c5"><span></span>Comprar</label>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisaf3.png" alt="Generic placeholder image" width="140" height="140">
@@ -205,14 +204,14 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=6");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c6\" name=\"c6\" /><label for=\"c6\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
 
           ?>
-          <input type="checkbox" id="c6" name="c6" /><label for="c6"><span></span>Comprar</label>
+
         </div><!-- /.col-lg-4 -->
    </div>
  </div>
@@ -231,13 +230,13 @@ unset ($_SESSION['id']);}
           $estoque = $db->query(" SELECT quantidade from produto where idProduto=7");
           $linha = $estoque ->fetch(PDO::FETCH_ASSOC);
           $quantidade=$linha["quantidade"];
-          if($quantidade==0){
-            echo "Produto Indisponível no Estoque";
+          if($quantidade>0){
+            echo "<input type=\"checkbox\" id=\"c7\" name=\"c7\" /><label for=\"c7\"><span></span>Comprar</label>";
           }else{
-             echo " "  ;
+             echo "Produto fora de estoque";
           }
           ?>
-          <input type="checkbox" id="c7" name="c7" /><label for="c7"><span></span>Comprar</label>
+          
         </div><!-- /.col-lg-4 -->
       </div>
     </div>
