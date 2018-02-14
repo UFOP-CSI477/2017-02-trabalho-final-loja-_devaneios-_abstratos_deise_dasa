@@ -26,6 +26,7 @@ if( !$linha["idCliente"]==null) {
   $_SESSION["login"] = $login;
   $_SESSION["senha"] = $senha;
   $_SESSION["nome"] = $linha["nome"];
+  $_SESSION["id"] = $linha["idCliente"];
   $_SESSION["logado"]=1;
 
 if($_SESSION["nome"] == "Deise Silva"){
@@ -39,6 +40,7 @@ if($_SESSION["nome"] == "Deise Silva"){
     unset ($_SESSION['senha']);
     unset ($_SESSION['nome']);
     unset ($_SESSION['logado']);
+    $_SESSION["id"] = $linha["id"];
     header('location:index.php');
 
     }

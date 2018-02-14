@@ -80,7 +80,7 @@
      while( $linha = $admin->fetch(PDO::FETCH_ASSOC) ) {
          echo "<tr>";
          echo "<td>" . $linha["idProduto"] . "</td>";
-         echo "<td>" . $linha["nome"] . "</td>";
+         echo "<td>" . $linha["nomeProduto"] . "</td>";
          echo "<td>" . $linha["tipo"] . "</td>";
          echo "<td>" . $linha["preco"] . "</td>";
         echo "<td>" . $linha["quantidade"] . "</td>";

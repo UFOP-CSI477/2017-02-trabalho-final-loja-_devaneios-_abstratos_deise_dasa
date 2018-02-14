@@ -1,12 +1,13 @@
 <?php
-    session_start();
-    if(isset($_SESSION["nome"])){
-      $usuario=$_SESSION["nome"];
-    }else{
-      unset ($_SESSION['login']);
-      unset ($_SESSION['senha']);
-      unset ($_SESSION['nome']);
-      unset ($_SESSION['logado']);}
+session_start();
+if(isset($_SESSION["nome"])){
+$usuario=$_SESSION["nome"];
+}else{
+unset ($_SESSION['login']);
+unset ($_SESSION['senha']);
+unset ($_SESSION['nome']);
+unset ($_SESSION['logado']);
+unset ($_SESSION['id']);}
     $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
     $users = $db->query(" SELECT nome, email, senha from cliente");
     ?>
@@ -82,21 +83,39 @@
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisa.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Mulher Maravilha</h4>
-          <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=1");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
             <input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisa2.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Logo Devaneios</h4>
-        <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=2");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
         <input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisa3.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Logo Devaneios</h4>
-        <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=3");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
         <input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
       </div>
@@ -106,20 +125,38 @@
      <div class="container marketing">
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisa4.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Diana e Steve </h4>
-          <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=4");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
         <input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisaf2.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Mulher Maravilha</h4>
-          <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=5");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
             <input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisaf3.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Logo Devaneios</h4>
-          <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=6");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
           <input type="checkbox" id="c6" name="cc" /><label for="c6"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
    </div>
@@ -128,8 +165,14 @@
   <div class="container marketing">
         <div class="col-lg-4">
           <img class="img-circle" src="imagens/camisa/camisaf1.png" alt="Generic placeholder image" width="140" height="140">
-          <h4>Estampa Diana e Steve</h4>
-          <h2>R$20,00</h2>
+          <?php
+          $camisa = $db->query(" SELECT nomeProduto, preco from produto where idProduto=7");
+          $linha = $camisa ->fetch(PDO::FETCH_ASSOC);
+          $nomeCamisa=$linha["nomeProduto"];
+          $preco=$linha["preco"];
+          echo "<h4>$nomeCamisa</h4>";
+          echo "<h2>R$" . "$preco" . "</h2>";
+          ?>
           <input type="checkbox" id="c7" name="cc" /><label for="c7"><span></span>Comprar</label>
         </div><!-- /.col-lg-4 -->
       </div>

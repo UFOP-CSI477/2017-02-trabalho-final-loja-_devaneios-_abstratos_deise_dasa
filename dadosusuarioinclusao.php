@@ -6,8 +6,8 @@ $usuario=$_SESSION["nome"];
 unset ($_SESSION['login']);
 unset ($_SESSION['senha']);
 unset ($_SESSION['nome']);
-unset ($_SESSION['idCliente']);
-unset ($_SESSION['logado']);}
+unset ($_SESSION['logado']);
+unset ($_SESSION['id']);}
 $db = new PDO('mysql:host=localhost;dbname=devaneiosloja','devaneiosloja', '123456');
 ?>
 
